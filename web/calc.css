@@ -1,0 +1,149 @@
+body{
+    background-image: url("background2.png");
+    background-size:cover;
+    font-family:'Microsoft YaHei UI';
+    font-weight: bold;
+}
+.name {
+    font-size: 50px;
+    margin-top: 10px;
+    color: #3f4952;
+    text-align: end;
+}
+a>img{
+    width: 66px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+}
+input[name="selected_time"] {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: #3f4952;
+    outline: none;
+    padding-left: 93px;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+}
+input[name="selected_time"]::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    background-color: #7ab3a5;
+    bottom: 0;
+    left:43%;
+} 
+
+input[name="output_code"] {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: #3f4952;
+    outline: none;
+    padding-left: 93px;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+}
+input[name="output_code"]::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    background-color: #7ab3a5;
+    bottom: 0;
+    left:43%;
+} 
+.img-but1{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #164A4A;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.img-but1>img {
+    width: 60%;
+    height: 60%;
+    padding-top: 20px;
+}
+.img-but2{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #81B5A8;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.img-but2>img {
+    width: 60%;
+    height: 60%;
+    padding-top: 20px;
+}
+.pcont1{
+    font-size: 25px;
+    color:#F6EFDC;
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #164A4A;
+    vertical-align: middle;
+    display: table-cell;
+}
+.pcont2{
+    font-size: 22px;
+    color:#434F58;
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #81B5A8;
+    vertical-align: middle;
+    display: table-cell;
+}
+.calcname{
+    font-size: 60px;
+    color:#215351;
+    padding-top: 106px;
+    padding-right: 131px;
+}
+.circle>img{
+    width: 292px;
+    height: 247px;
+}
+.form-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.circle{
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.block1{
+    margin-top: -40px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+.calc {
+    margin-left: -129px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Sleepy clock</title>
+  <link rel="icon" type="image/png" href="/favicon.png"> 
+  <link rel="stylesheet" href="alarm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+ </head>
+ <style>
+    .name {
+        font-family: 'Luckiest Guy', cursive;
+    }
+    </style>
+    
+ <body>
+    <form action="#" method="post">
+        <a href="main.html"><img src="go.png" alt="go"></a>
+        <a href="#" id="alarmgp" class="gonext"><img src="next.png" alt="go"></a>
+        <div class="form-1">
+            <div class="img-but3"><img src="sound.png" alt="sound"></div>
+            
+            <p class="pcont1">Мелодия</p>
+            
+            <select tabindex="1" id="sound">
+            <div class="list">
+                <option label="Default" value="C:\\Users\\User\\Desktop\\Проект\\web\\default.mp3" selected>Default</option>
+                <option value="C:\\Users\\User\\Desktop\\Проект\\web\\summer.mp3">Лето</option>
+                <option value="C:\\Users\\User\\Desktop\\Проект\\web\\spring.mp3">Весна</option>
+                <option value="C:\\Users\\User\\Desktop\\Проект\\web\\winter.mp3">Зима</option>
+            </div>
+            </select>
+        </div>
+
+        <div class="form-2">
+            <div class="img-but3"><img src="alarm.png" alt="alarm"></div>
+
+            <p class="pcont2">Время</p>
+
+            <div>
+                <p><input tabindex="2" type="time" name="selected_time" ></p>
+            </div>
+        </div>
+
+        <p class="name">Sleepy <br>clock</p>
+    </form>
+    <script src="eel.js"></script>
+    <script type="text/javascript">
+        console.log('111');
+        document.querySelector(".gonext").onclick = async function summation(){   
+           let time_alarm = document.querySelector('[name="selected_time"]').value;
+           let sound = document.getElementById("sound").value; 
+           await eel.get_settings(time_alarm,sound)();
+           location.href = 'alarm2.html';  
+           console.log(a);
+       }  
+    </script>
+ </body>
+ 
+</html>

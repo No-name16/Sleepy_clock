@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Sleepy clock</title>
+  <link rel="icon" type="image/png" href="/favicon.png"> 
+  <link rel="stylesheet" href="alarm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+ </head>
+ <style>
+    .name {
+        font-family: 'Luckiest Guy', cursive;
+    }
+    </style>
+ <body>
+    <form action="#" method="post">
+    <a href="main.html"><img src="go.png" alt="go"></a>
+    <a href="#" id="alarmgp" class="gonext"><img src="next.png" alt="go"></a>
+    <div class="form-1">
+    <div class="img-but3"><img src="zitata.png" alt="zitata"></div>
+    <p class="pcont1">Цитата</p>
+     <select tabindex="1" class="selector">
+	<option label="Цитата" selected>Если каждое утро вы будете просыпаться с мыслью о том, что сегодня обязательно произойдет что-то хорошее, так и будет!</option>
+	<option>Доброе утро приносит добрый день.</option>
+	<option>Каждое утро - это время начать жизнь заново</option>
+	<option>Самое главное — это то, с каким настроением вы входите в новое утро.</option>
+    </select>
+    </div>
+    <div class="form-2">
+    <div class="img-but3"><img src="zametka.png" alt="zametka"></div>
+    <p class="pcont2">Заметка</p>
+    <div>
+        <p><input tabindex="2" type="text" name="note" ></p>
+    </div>
+    </div>
+    <p class="name">Sleepy <br>clock</p>
+</form>
+    <script src="eel.js"></script>
+    <script type="text/javascript">
+        console.log('111');
+        document.querySelector(".gonext").onclick = async function summation(){   
+           let note = document.querySelector('[name="note"]').value;
+           let line = document.querySelector(".selector").value; 
+           console.log('112');
+           await eel.get_settings2(note,line)();
+           console.log('113');
+           location.href = 'main.html';  
+           console.log(a);
+       }  
+    </script>
+ </body>
+</html>

@@ -1,0 +1,121 @@
+.name-block{
+  display: flex; 
+  flex-direction: row; 
+}
+body{
+    background-image: url("background.png");
+    background-size: cover;
+    display:flex;
+    justify-content: flex-start;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.main-menu-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 15px;
+}
+.button-class{
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+img {
+    width: 50%;
+    height: 50%;
+    padding: 20%;
+    align-self: center;
+}
+.img-but1{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #3f4952;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+}
+.img-but2{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #81B5A8;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+}
+.img-but3{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #3f4952;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+}
+.line{
+    width: 5px;
+    height: 100px;
+    padding: 0;
+}
+.name{
+    background-color: #addbd0;
+    padding: 5%;
+    padding-left: 13%;
+    padding-right: 13%;
+    border-radius: 200px;
+    height: 200px;
+    width: 400px;
+    align-self: flex-end;
+    margin: 10% 15%;
+    color:#404754;
+    font-size: 80px;
+}
+.menu-1{
+    height: 100%;
+    align-self: center;
+    width: 350px;
+    height: 80px;
+    text-align: left;
+    margin-right: -100px;
+    border: #3f4952;
+    border-radius: 45px ;
+    background-color: #3f4952;
+    color:#f6efdc;
+    margin-right: -25%;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 18%;
+
+}
+.menu-2{
+    font-weight: bold;
+    font-size: 35px;
+    height: 100%;
+    align-self: center;
+    width: 350px;
+    height: 80px;
+    text-align: center;
+    border: #81B5A8;
+    border-radius: 45px ;
+    background-color: #81B5A8;
+    color:#3F4853;
+    margin-right: -25%;
+}
+.menu-3{
+    font-weight: bold;
+    font-size: 30px;
+    height: 100%;
+    align-self: center;
+    width: 350px;
+    height: 80px;
+    text-align: left;
+    padding-left: 11%;
+    border: #3f4952;
+    border-radius: 45px ;
+    background-color: #3f4952;
+    color:white;
+    margin-right: -25%;
+}

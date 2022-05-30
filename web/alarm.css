@@ -1,0 +1,120 @@
+body{
+    background-image: url("background-alarm.png");
+    background-size: cover;
+    font-family:'Microsoft YaHei UI';
+    font-weight: bold;
+}
+
+.img-but3{
+    border: 20% ;
+    border-radius: 50%;
+    background-color: #3f4952;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+}
+.img-but3>img {
+    width: 60%;
+    height: 60%;
+    padding-top: 20px;
+}
+a>img{
+    width: 5%;
+}
+.pcont1{
+    font-size: 30px;
+    color:#3f4952;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #F6EFDC;
+}
+.pcont2{
+    font-size: 30px;
+    color:#3f4952;
+    background-color: #ADDBD0;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+.form-1 {
+    flex-direction: column;
+    display: flex;
+    margin: 75px 30% 0 50%;}
+
+.form-2{
+    flex-direction: column;
+    display: flex;
+    margin: -21px 60% 0 20%;
+}
+.name {
+    font-size: 50px;
+    margin-top: -53px;
+    color: #3f4952;
+    text-align: end;
+    margin-right: 87px;
+    margin-bottom: -5px;
+}
+select{
+    border: 3px solid #F6EFDC;
+    border-radius: 10px;
+    padding: 0 5px;   
+    height: 50px;
+    width: 300px;
+    background: transparent;
+    color: #3f4952;
+    font-size: 22px;
+    outline: none;
+    
+}
+
+
+input[name="selected_time"] {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: #3f4952;
+    outline: none;
+    padding-left: 93px;
+    width: 250px;
+    height: 80px;
+}
+input[name="selected_time"]::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    background-color: #7ab3a5;
+    bottom: 0;
+    left:43%;
+} 
+
+input[name="selected_time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+option{
+    background-color:#7ab3a5 ;
+    border-radius: 10px;
+}
+button>img{
+    width: 5%;
+}
+input[name="note"]{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid #7ab3a5;
+    height: 100px;
+    width: 350px;
+    margin-top: -20px;
+    margin-left: -30px;
+    color: #3f4952;
+    font-size: 22px;
+    outline: none;
+}

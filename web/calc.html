@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Sleepy clock</title>
+  <link rel="icon" type="image/png" href="/favicon.png"> 
+  <link rel="stylesheet" href="calc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+ </head>
+ <style>
+    .name {
+        font-family: 'Luckiest Guy', cursive;
+    }
+    </style>
+ <body>
+    <form action="#" method="post">
+        <div class="topbar">
+        <a href="main.html"><img src="go1.png" alt="go"></a>
+        <a href="#"><img src="gocalc.png" class = "calc" alt="go"></a>
+        <p class="calcname">Калькулятор сна</p>
+        <p class="name">Sleepy <br>clock</p>
+        </div>
+        <div class="form-1">
+            <div class="block1">
+            <div class="img-but1"><img src="tea.png" alt="tea"></div>
+            
+            <p class="pcont1">Время<br>пробуждения</p>
+            <div>
+                <p><input tabindex="1" type="time" name="selected_time" ></p>
+            </div>
+        </div>
+
+            <div class="circle"><img  src="circle.png" alt="circle"></div>
+            
+            <div class="block1"><div class="img-but2"><img src="plane.png" alt="plane"></div>
+            
+            <p class="pcont2">Оптимальное время<br>отхода ко сну</p>
+            <div>
+                <p><input tabindex="1" type="time" name="output_code" readonly ></p>
+            </div>
+        </div>
+    </form>
+    <script src="eel.js"></script>
+    <script type="text/javascript">
+        console.log('111');
+        document.querySelector(".calc").onclick = async function summation(){   
+            console.log('234');
+           let selected_time = document.querySelector('[name="selected_time"]').value; 
+           let time = await eel.calc(selected_time)();  
+           console.log(time, typeof time)
+           document.querySelector('[name="output_code"]').value = time;
+       } 
+    </script> 
+ </body>
+</html>

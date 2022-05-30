@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Sleepy clock</title>
+  <link rel="icon" type="image/png" href="/favicon.png"> 
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+ </head>
+ <style>
+    p {
+        font-family: 'Luckiest Guy', cursive;
+    }
+    </style>
+ <body>
+  <div class="name-block">
+      <p class="name" >Sleepy clock</p>
+    <div class="main-menu-class">
+        <div class="button-class">
+        <a href="#">
+            <button  class="menu-1"type="button">Будильник</button>
+            <div class="img-but1"><img src="alarm.png" alt="alarm"></div>
+        </a></div>
+        <img class="line" src="line.png" alt="line">
+        <div class="button-class">
+        <a href="#">
+            <button  class="menu-2"type="button" >Таймер</button>
+            <div class="img-but2"><img src="timer.png" alt="timer"></div>
+        </a></div>
+        <img class="line" src="line.png" alt="line">
+        <div class="button-class">
+        <a href="calc.html">
+            <button class="menu-3" type="button" >Калькулятор</button>
+            <div class="img-but3"><img src="calc.png" alt="calc"></div>
+        </a> </div>
+    </div>
+  </div>
+      <script src="eel.js"></script>
+      <script type="text/javascript">
+        console.log('111');
+        document.querySelector(".menu-1").onclick = async function summation(){   
+           await eel.get_settings1(1)();
+           location.href = 'alarm.html';  
+           console.log(a);
+        }
+        document.querySelector(".menu-2").onclick = async function summation(){   
+           await eel.get_settings1(2)();
+           location.href = 'alarm.html';  
+           console.log(a);
+       }  
+        </script>
+
+ </body>
+</html>
